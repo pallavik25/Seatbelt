@@ -1,0 +1,8 @@
+language:c
+sudo:false 
+compiler:
+     -clang
+     -gcc
+script:
+     -clang -coverage  -O0 seatbelt.c -o seatbelt
+     -./seatbelt
